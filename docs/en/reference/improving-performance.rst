@@ -25,6 +25,8 @@ Doctrine will need to load your mapping information on every single
 request and has to parse each DQL query on every single request.
 This is a waste of resources.
 
+See :ref:`caching#integrating-with-the-orm`
+
 Alternative Query Result Formats
 --------------------------------
 
@@ -41,6 +43,8 @@ for updates, which means when you call flush on the EntityManager these entities
 even if properties changed. Read-Only allows to persist new entities of a kind and remove existing
 ones, they are just not considered for updates.
 
+See :ref:`annref_entity`
+
 Extra-Lazy Collections
 ----------------------
 
@@ -53,12 +57,13 @@ Temporarily change fetch mode in DQL
 
 See :ref:`dql-temporarily-change-fetch-mode`
 
-
 Apply Best Practices
 --------------------
 
 A lot of the points mentioned in the Best Practices chapter will
 also positively affect the performance of Doctrine.
+
+See :ref:`best-practices`
 
 Change Tracking policies
 ------------------------
